@@ -47,8 +47,6 @@
 
 (ann sendinfo [Conn -> PrintWriter])
 (defn sendinfo [conn]
-  (println nick)
-  (println "lol")
   (writeToOut conn (str "NICK " nick))
   (writeToOut conn (str "USER " nick " 0 * :" nick)))
 
